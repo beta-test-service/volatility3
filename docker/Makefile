@@ -10,13 +10,6 @@ ALPINE_VERSION ?= 3.11
 
 all: volshell vol pdbconv
 
-pdbconv:
-	@$(DOCKER_BIN) build \
-		$(DOCKER_FLAGS)  \
-		--rm             \
-		--tag $(DOCKER_REPOSITORY)/$@:$(DOCKER_TAG) \
-		$@
-
 volshell vol pdbconv:
 	@$(DOCKER_BIN) build \
 		$(DOCKER_FLAGS)  \
