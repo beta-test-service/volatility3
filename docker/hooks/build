@@ -1,0 +1,3 @@
+#!/bin/bash
+
+make volshell DOCKER_REPOSITORY=ilch1
